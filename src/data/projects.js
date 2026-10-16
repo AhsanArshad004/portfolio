@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 'trapeze-resource-planner',
     title: 'Trapeze FX Resource & Timetable Planner',
-    description: 'Enterprise resource and timetable management system',
+    description: 'Reduced scheduling conflicts by 85% for 500+ transit agencies managing 10K+ resources',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'Constraint Solver'],
     category: 'Enterprise Resource Planning',
     categoryColor: 'bg-gradient-blue-purple',
@@ -48,7 +48,7 @@ export const projects = [
   {
     id: 'dokmee-ecm',
     title: 'Dokmee ECM & Forms Platform',
-    description: 'Enterprise content management with intelligent form automation',
+    description: 'Cut document processing from 30 days to 3 days while achieving 99% compliance for 1000+ organizations',
     technologies: ['C#', 'ASP.NET', 'SQL Server', 'WebForms', 'WPF'],
     category: 'ECM Platform',
     categoryColor: 'bg-gradient-blue-teal',
@@ -94,7 +94,7 @@ export const projects = [
   {
     id: 'validcheck',
     title: 'ValidCheck Data Validation Framework',
-    description: 'Cross-service validation rules engine for microservices',
+    description: 'Prevented 500+ critical issues before production, eliminated 75% of defects at entry point',
     technologies: ['C#', '.NET Core', 'Microservices', 'Domain-Driven Design'],
     category: 'Quality Assurance',
     categoryColor: 'bg-gradient-blue-purple',
@@ -140,7 +140,7 @@ export const projects = [
   {
     id: 'scoreceO',
     title: 'ScoreCEO Analytics Dashboard',
-    description: 'Real-time executive analytics platform with predictive insights',
+    description: 'Eliminated reporting lag, increased decision velocity by 3x, identified $1M+ in cost savings',
     technologies: ['React', 'Node.js', 'MongoDB', 'D3.js', 'WebSockets'],
     category: 'Analytics',
     categoryColor: 'bg-gradient-blue-teal',
@@ -186,7 +186,7 @@ export const projects = [
   {
     id: 'middleware-layers',
     title: 'Middleware Architecture & Service Decoupling',
-    description: 'Event-driven middleware abstraction for microservices',
+    description: 'Increased deployment frequency by 10x, reduced integration bugs by 80%, enabled microservices',
     technologies: ['C#', '.NET Core', 'RabbitMQ', 'Event Sourcing', 'Domain Events'],
     category: 'Middleware',
     categoryColor: 'bg-gradient-blue-purple',
@@ -232,7 +232,7 @@ export const projects = [
   {
     id: 'nebula-chat',
     title: 'Nebula Chat Collaboration Platform',
-    description: 'Unified team communication with integrated chat, files, and audit logging',
+    description: 'Reduced email volume by 70%, achieved full compliance, cut response times by 50%',
     technologies: ['React', 'Node.js', 'WebSockets', 'PostgreSQL', 'Redis'],
     category: 'Chat',
     categoryColor: 'bg-gradient-blue-teal',

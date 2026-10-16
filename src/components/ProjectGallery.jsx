@@ -21,7 +21,7 @@ export default function ProjectGallery({ project }) {
     <>
       {/* Thumbnail Grid */}
       <section ref={sectionRef} className="py-16 px-4 max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center">Gallery</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center text-white">Gallery</h2>
 
         <div className="grid md:grid-cols-3 gap-4">
           {gallery.map((image, idx) => (
@@ -30,7 +30,7 @@ export default function ProjectGallery({ project }) {
               src={image.url}
               alt={image.caption}
               loading="lazy"
-              className="w-full h-48 object-cover rounded-lg cursor-pointer hover:opacity-80 transition-opacity"
+              className="w-full h-48 object-cover rounded-lg cursor-pointer hover:opacity-80 hover:ring-2 ring-cyan-500 transition-all"
               onClick={() => {
                 setCurrentImage(idx);
                 setLightboxOpen(true);

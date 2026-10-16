@@ -14,12 +14,12 @@ export default function ProjectDetail() {
 
   if (!project) {
     return (
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col bg-dark-bg">
         <Header />
         <div className="flex-1 flex items-center justify-center">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">Project Not Found</h1>
-            <Link to="/" className="text-blue-500 hover:text-blue-700">
+            <h1 className="text-4xl font-bold text-white mb-4">Project Not Found</h1>
+            <Link to="/" className="text-cyan-400 hover:text-cyan-300">
               ← Back to Projects
             </Link>
           </div>
@@ -30,12 +30,12 @@ export default function ProjectDetail() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-white">
+    <div className="min-h-screen flex flex-col bg-dark-bg">
       <Header />
 
       {/* Sticky Back Link */}
-      <div className="sticky top-20 bg-white/95 backdrop-blur z-40 px-4 py-3">
-        <Link to="/" className="text-blue-600 hover:underline font-semibold">
+      <div className="sticky top-20 bg-dark-bg/95 backdrop-blur border-b border-gray-700 z-40 px-4 py-3">
+        <Link to="/" className="text-cyan-400 hover:text-cyan-300 font-semibold">
           ← Back to Projects
         </Link>
       </div>
@@ -59,11 +59,11 @@ export default function ProjectDetail() {
         <ProjectGallery project={project} />
 
         {/* Tech Stack Section */}
-        <section className="py-16 px-4 max-w-4xl mx-auto bg-gray-50">
-          <h2 className="text-3xl font-bold mb-8">Technologies Used</h2>
+        <section className="py-16 px-4 max-w-4xl mx-auto bg-dark-card border-t border-gray-700">
+          <h2 className="text-3xl font-bold text-white mb-8">Technologies Used</h2>
           <div className="flex flex-wrap gap-3">
             {project.technologies.map(tech => (
-              <span key={tech} className={`${project.categoryColor} text-white px-4 py-2 rounded-full font-semibold`}>
+              <span key={tech} className="bg-dark-card border border-gray-600 text-gray-300 px-4 py-2 rounded-full font-semibold hover:border-cyan-400 hover:text-cyan-400 transition">
                 {tech}
               </span>
             ))}
