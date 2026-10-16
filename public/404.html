@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    // GitHub Pages SPA fallback: preserve the deep-link path across the
+    // 404 -> index.html redirect (plain "redirect to /" would lose it).
+    // src/main.jsx restores it via history.replaceState before React Router mounts.
+    var path = window.location.pathname + window.location.search + window.location.hash;
+    window.location.replace('/?route=' + encodeURIComponent(path));
+  </script>
+</head>
+<body>
+  <p>Redirecting to home...</p>
+</body>
+</html>
