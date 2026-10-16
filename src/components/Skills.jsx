@@ -18,7 +18,7 @@ export default function Skills() {
   return (
     <section ref={sectionRef} id="skills" className="section-padding bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-gradient-blue-purple text-4xl font-bold mb-12 text-center">Skills & Technologies</h2>
+        <h2 className="text-gray-900 text-4xl font-bold mb-12 text-center">Skills & Technologies</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {Object.entries(skillCategories).map(([category, items]) => (
             <div key={category} className="animate-fade-in-up">
@@ -27,7 +27,7 @@ export default function Skills() {
                 {items.map(skill => (
                   <span
                     key={skill}
-                    className="bg-gradient-blue-teal text-white px-4 py-2 rounded-full text-sm font-semibold hover:scale-110 transition-transform cursor-help group relative"
+                    className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition-colors cursor-help group relative shadow-sm"
                     title={`Proficiency: Expert`}
                   >
                     {skillIcons[skill] || '⭐'} {skill}

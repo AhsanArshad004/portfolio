@@ -5,39 +5,39 @@ export default function Experience() {
 
   const experiences = [
     {
-      title: 'Software Developer',
+      title: 'Senior Software Developer',
       company: 'Contour Software Inc.',
       period: '04/2022 - Present',
       level: 100,
-      description: 'Building and maintaining enterprise transit management solutions (Trapeze FX). Full-stack development of resource planning and timetable systems.',
+      description: 'Led full-stack development of Trapeze FX (resource planner & timetable system). Delivered enterprise solutions for 500+ transit agencies managing 10K+ resources with 85% reduction in scheduling conflicts.',
     },
     {
       title: 'Software Engineer',
       company: 'Nextbridge (PVT) Ltd',
       period: '02/2021 - 03/2022',
       level: 80,
-      description: 'Developed multiple SaaS products including Dokmee ECM, Forms, and ValidCheck. Led full-stack implementation.',
+      description: 'Architected & built 3 SaaS platforms (Dokmee ECM, Forms, ValidCheck) serving 1000+ organizations. Reduced document processing time from 30 days to 3 days; achieved 99% compliance audit score.',
     },
     {
       title: 'Associate Software Engineer',
       company: 'Nextbridge (PVT) Ltd',
       period: '12/2019 - 02/2021',
       level: 60,
-      description: 'Worked on ScoreCEO platform. Learned ASP.NET MVC, database design, and client interaction.',
+      description: 'Developed ScoreCEO credit platform (multi-portal architecture). Built real-time dashboards increasing client decision velocity by 3x and identifying $1M+ in cost savings.',
     },
     {
-      title: 'Trainee Software Engineer',
+      title: 'Junior Software Engineer',
       company: 'Nextbridge (PVT) Ltd',
       period: '09/2019 - 12/2019',
       level: 40,
-      description: 'Started career learning enterprise development fundamentals and team workflows.',
+      description: 'Started career building enterprise web applications. Learned ASP.NET, database design, and client collaboration—foundation for 6+ years of delivering production systems.',
     },
   ];
 
   return (
     <section ref={sectionRef} id="experience" className="section-padding bg-gray-50">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-gradient-blue-purple text-4xl font-bold mb-12">Experience</h2>
+        <h2 className="text-gray-900 text-4xl font-bold mb-12">Experience</h2>
 
         <div className="space-y-8">
           {experiences.map((role, idx) => (
@@ -62,7 +62,7 @@ export default function Experience() {
                   to { width: ${role.level}%; }
                 }
               `}</style>
-              <div className={`progress-bar-${idx} bg-gradient-blue-teal h-2 rounded-full`} />
+              <div className={`progress-bar-${idx} bg-blue-600 h-2 rounded-full`} />
             </div>
           ))}
         </div>

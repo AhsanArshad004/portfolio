@@ -23,10 +23,10 @@ export default function Header() {
 
         {/* Desktop menu */}
         <div className="hidden md:flex gap-8 items-center">
-          <a href="/#about" className="text-gray-600 hover:text-gray-900 transition">About</a>
-          <a href="/#projects" className="text-gray-600 hover:text-gray-900 transition">Projects</a>
-          <a href="/#contact" className="text-gray-600 hover:text-gray-900 transition">Contact</a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+          <a href="#about" className="text-gray-600 hover:text-blue-600 transition">About</a>
+          <a href="#projects" className="text-gray-600 hover:text-blue-600 transition">Projects</a>
+          <a href="#contact" className="text-gray-600 hover:text-blue-600 transition">Contact</a>
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600">
             GitHub
           </a>
         </div>
@@ -35,10 +35,10 @@ export default function Header() {
         {menuOpen && (
           <div className="absolute top-16 left-0 right-0 bg-white shadow-lg md:hidden">
             <div className="flex flex-col gap-4 p-4">
-              <a href="/#about" className="text-gray-600 hover:text-gray-900">About</a>
-              <a href="/#projects" className="text-gray-600 hover:text-gray-900">Projects</a>
-              <a href="/#contact" className="text-gray-600 hover:text-gray-900">Contact</a>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+              <a href="#about" className="text-gray-600 hover:text-blue-600">About</a>
+              <a href="#projects" className="text-gray-600 hover:text-blue-600">Projects</a>
+              <a href="#contact" className="text-gray-600 hover:text-blue-600">Contact</a>
+              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600">
                 GitHub
               </a>
             </div>

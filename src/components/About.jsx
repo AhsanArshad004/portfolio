@@ -37,7 +37,7 @@ export default function About() {
   return (
     <section ref={sectionRef} id="about" className="section-padding bg-gray-50">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-gradient-blue-purple text-4xl font-bold mb-8">About Me</h2>
+        <h2 className="text-gray-900 text-4xl font-bold mb-8">About Me</h2>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg text-gray-600 mb-4">

@@ -12,10 +12,10 @@ export default function ProjectCard({ project }) {
             src={thumbUrl}
             alt={project.title}
             loading="lazy"
-            className="w-full h-full object-cover hover:brightness-110 transition-all duration-200"
+            className="w-full h-full object-cover hover:brightness-105 transition-all duration-200"
           />
           {/* Category badge */}
-          <div className={`absolute top-3 right-3 ${project.categoryColor} text-white text-xs font-bold px-3 py-1 rounded-full`}>
+          <div className="absolute top-3 right-3 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
             {project.category}
           </div>
         </div>
