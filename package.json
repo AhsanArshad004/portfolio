@@ -1,17 +1,21 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Professional portfolio showcasing enterprise projects",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/portfolio.git"
+  },
+  "author": "Ahsan Arshad",
+  "license": "MIT",
+  "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
