@@ -6,10 +6,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#3B82F6',
-        accent: '#0D9488',
-        dark: '#1F2937',
-        light: '#F9FAFB',
+        primary: '#06B6D4',
+        accent: '#06B6D4',
+        'dark-bg': '#0f172a',
+        'dark-card': '#1e293b',
+        dark: '#0f172a',
+        light: '#f1f5f9',
       },
       fontFamily: {
         sans: ['Poppins', 'Inter', 'sans-serif'],

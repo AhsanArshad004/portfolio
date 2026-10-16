@@ -6,7 +6,7 @@
 
 @layer components {
   .btn-primary {
-    @apply px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors;
+    @apply px-6 py-3 bg-cyan-500 text-dark-bg rounded-lg hover:bg-cyan-400 transition-colors font-semibold;
   }
   .section-padding {
     @apply py-16 px-4 md:px-8 md:py-20;
@@ -19,7 +19,7 @@ button, a[role="button"], .btn-primary {
 }
 
 button:hover, a[role="button"]:hover, .btn-primary:hover {
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
 }
 
 button:active, a[role="button"]:active {

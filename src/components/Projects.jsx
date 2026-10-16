@@ -3,10 +3,15 @@ import ProjectCard from './ProjectCard'
 
 export default function Projects() {
   return (
-    <section id="projects" className="section-padding bg-white">
+    <section id="projects" className="section-padding bg-dark-bg">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-900 mb-12">Featured Projects</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mb-12">
+          <div className="inline-block mb-4">
+            <span className="text-cyan-400 text-sm font-mono uppercase tracking-wider">FEATURED WORK</span>
+          </div>
+          <h2 className="text-white text-4xl font-bold">Enterprise solutions that deliver measurable outcomes</h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

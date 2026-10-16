@@ -5,15 +5,15 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 bg-white shadow-sm z-50">
+    <header className="sticky top-0 bg-dark-bg border-b border-gray-700 z-50 backdrop-blur-sm">
       <nav className="max-w-6xl mx-auto px-4 py-4 md:py-6 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-gray-900">
-          AA
+        <Link to="/" className="text-xl font-bold text-white">
+          Ahsan Arshad
         </Link>
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden text-gray-600 hover:text-gray-900"
+          className="md:hidden text-gray-400 hover:text-white"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -23,22 +23,26 @@ export default function Header() {
 
         {/* Desktop menu */}
         <div className="hidden md:flex gap-8 items-center">
-          <a href="#about" className="text-gray-600 hover:text-blue-600 transition">About</a>
-          <a href="#projects" className="text-gray-600 hover:text-blue-600 transition">Projects</a>
-          <a href="#contact" className="text-gray-600 hover:text-blue-600 transition">Contact</a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600">
+          <a href="#about" className="text-gray-300 hover:text-cyan-400 transition">About</a>
+          <a href="#skills" className="text-gray-300 hover:text-cyan-400 transition">Skills</a>
+          <a href="#projects" className="text-gray-300 hover:text-cyan-400 transition">Projects</a>
+          <a href="#experience" className="text-gray-300 hover:text-cyan-400 transition">Experience</a>
+          <a href="#contact" className="text-gray-300 hover:text-cyan-400 transition">Contact</a>
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400">
             GitHub
           </a>
         </div>
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="absolute top-16 left-0 right-0 bg-white shadow-lg md:hidden">
+          <div className="absolute top-16 left-0 right-0 bg-dark-card shadow-lg md:hidden border-b border-gray-700">
             <div className="flex flex-col gap-4 p-4">
-              <a href="#about" className="text-gray-600 hover:text-blue-600">About</a>
-              <a href="#projects" className="text-gray-600 hover:text-blue-600">Projects</a>
-              <a href="#contact" className="text-gray-600 hover:text-blue-600">Contact</a>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600">
+              <a href="#about" className="text-gray-300 hover:text-cyan-400">About</a>
+              <a href="#skills" className="text-gray-300 hover:text-cyan-400">Skills</a>
+              <a href="#projects" className="text-gray-300 hover:text-cyan-400">Projects</a>
+              <a href="#experience" className="text-gray-300 hover:text-cyan-400">Experience</a>
+              <a href="#contact" className="text-gray-300 hover:text-cyan-400">Contact</a>
+              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400">
                 GitHub
               </a>
             </div>

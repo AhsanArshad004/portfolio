@@ -12,24 +12,32 @@ export default function Hero() {
   return (
     <section
       ref={heroRef}
-      className="min-h-screen bg-white flex items-center justify-center text-center px-4 py-20 md:py-32 relative"
+      className="min-h-screen bg-dark-bg flex items-center justify-center text-center px-4 py-20 md:py-32 relative"
     >
       <div className="max-w-4xl mx-auto z-10">
-        <h1 className="text-gray-900 text-5xl md:text-6xl font-bold mb-6">
-          Full-Stack Developer
+        <div className="inline-block mb-6 px-4 py-2 border border-cyan-400 rounded-full">
+          <span className="text-cyan-400 text-sm font-mono uppercase tracking-wider">Full Stack Engineer | Enterprise Solutions</span>
+        </div>
+        <h1 className="text-white text-5xl md:text-6xl font-bold mb-6">
+          Ahsan Arshad
         </h1>
-        <p className="text-xl md:text-2xl text-gray-600 mb-8">
-          Enterprise Solutions & Modern Web Architecture
+        <p className="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+          I build scalable, secure web and desktop applications that solve real business problems. With 10+ years of experience, I've delivered enterprise solutions to clients worldwide.
         </p>
-        <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
-          I build scalable, secure web and desktop applications that solve real business problems. With 10+ years of experience, I've delivered solutions to clients worldwide.
-        </p>
-        <a
-          href="#projects"
-          className="inline-block px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:shadow-lg transition-all duration-200 active:scale-95 font-semibold"
-        >
-          View My Work →
-        </a>
+        <div className="flex gap-4 justify-center mb-8">
+          <a
+            href="#contact"
+            className="inline-block px-8 py-3 bg-white text-dark-bg rounded-full hover:bg-gray-100 transition-all duration-200 font-semibold"
+          >
+            Get in touch →
+          </a>
+          <a
+            href="#projects"
+            className="inline-block px-8 py-3 border border-gray-500 text-white rounded-full hover:border-cyan-400 hover:text-cyan-400 transition-all duration-200 font-semibold"
+          >
+            View My Work
+          </a>
+        </div>
       </div>
     </section>
   )

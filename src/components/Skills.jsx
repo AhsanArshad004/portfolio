@@ -16,18 +16,23 @@ export default function Skills() {
   };
 
   return (
-    <section ref={sectionRef} id="skills" className="section-padding bg-white">
+    <section ref={sectionRef} id="skills" className="section-padding bg-dark-bg">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-gray-900 text-4xl font-bold mb-12 text-center">Skills & Technologies</h2>
+        <div className="mb-12">
+          <div className="inline-block mb-4">
+            <span className="text-cyan-400 text-sm font-mono uppercase tracking-wider">CAPABILITIES</span>
+          </div>
+          <h2 className="text-white text-4xl font-bold">A full stack toolkit, sharpened on production</h2>
+        </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {Object.entries(skillCategories).map(([category, items]) => (
-            <div key={category} className="animate-fade-in-up">
-              <h3 className="font-bold text-lg mb-4 text-gray-800">{category}</h3>
+            <div key={category} className="animate-fade-in-up bg-dark-card border border-gray-700 rounded-lg p-6">
+              <h3 className="font-bold text-cyan-400 text-sm uppercase mb-4 tracking-wider">{category}</h3>
               <div className="flex flex-wrap gap-3">
                 {items.map(skill => (
                   <span
                     key={skill}
-                    className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition-colors cursor-help group relative shadow-sm"
+                    className="border border-gray-600 text-gray-300 px-3 py-1 rounded-full text-xs font-medium hover:border-cyan-400 hover:text-cyan-400 transition-colors cursor-help group relative"
                     title={`Proficiency: Expert`}
                   >
                     {skillIcons[skill] || '⭐'} {skill}

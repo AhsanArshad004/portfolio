@@ -35,22 +35,22 @@ export default function Experience() {
   ];
 
   return (
-    <section ref={sectionRef} id="experience" className="section-padding bg-gray-50">
+    <section ref={sectionRef} id="experience" className="section-padding bg-dark-bg">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-gray-900 text-4xl font-bold mb-12">Experience</h2>
+        <h2 className="text-white text-4xl font-bold mb-12">Experience</h2>
 
         <div className="space-y-8">
           {experiences.map((role, idx) => (
-            <div key={idx} className="bg-white rounded-lg p-6 shadow-md animate-fade-in-up">
+            <div key={idx} className="bg-dark-card border border-gray-700 rounded-lg p-6 animate-fade-in-up">
               <div className="flex justify-between items-start mb-2">
                 <div>
-                  <h3 className="font-bold text-lg">{role.title}</h3>
-                  <p className="text-blue-600 font-semibold">{role.company}</p>
+                  <h3 className="font-bold text-lg text-white">{role.title}</h3>
+                  <p className="text-cyan-400 font-semibold">{role.company}</p>
                 </div>
-                <span className="text-gray-600 text-sm">{role.period}</span>
+                <span className="text-gray-400 text-sm">{role.period}</span>
               </div>
 
-              <p className="text-gray-700 mb-4">{role.description}</p>
+              <p className="text-gray-300 mb-4">{role.description}</p>
 
               {/* Animated Progress Bar */}
               <style>{`
@@ -62,7 +62,7 @@ export default function Experience() {
                   to { width: ${role.level}%; }
                 }
               `}</style>
-              <div className={`progress-bar-${idx} bg-blue-600 h-2 rounded-full`} />
+              <div className={`progress-bar-${idx} bg-cyan-500 h-2 rounded-full`} />
             </div>
           ))}
         </div>
