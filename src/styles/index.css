@@ -1,3 +1,5 @@
+@import './animations.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,4 +15,19 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Gradient text with solid fallback */
+.text-gradient-blue-purple {
+  background: linear-gradient(90deg, #3B82F6, #A855F7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Fallback for browsers that don't support gradient text */
+@supports not (-webkit-background-clip: text) {
+  .text-gradient-blue-purple {
+    color: #3B82F6;
+  }
 }
