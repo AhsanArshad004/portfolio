@@ -13,6 +13,19 @@
   }
 }
 
+/* Button glow on hover */
+button, a[role="button"], .btn-primary {
+  @apply transition-all duration-200;
+}
+
+button:hover, a[role="button"]:hover, .btn-primary:hover {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+button:active, a[role="button"]:active {
+  @apply scale-95;
+}
+
 html {
   scroll-behavior: smooth;
 }
