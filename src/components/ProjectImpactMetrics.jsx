@@ -1,0 +1,63 @@
+import { useState, useEffect, useRef } from 'react';
+
+function AnimatedCounter({ value, duration = 2000 }) {
+  const [displayValue, setDisplayValue] = useState(0);
+  const ref = useRef(null);
+  const hasAnimated = useRef(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting && !hasAnimated.current) {
+        hasAnimated.current = true;
+        const numericValue = parseInt(value);
+        const startTime = Date.now();
+
+        const animate = () => {
+          const elapsed = Date.now() - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          setDisplayValue(Math.floor(progress * numericValue));
+
+          if (progress < 1) {
+            requestAnimationFrame(animate);
+          }
+        };
+
+        animate();
+        observer.unobserve(entry.target);
+      }
+    }, { threshold: 0.3 });
+
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, [value, duration]);
+
+  return <span ref={ref}>{displayValue}</span>;
+}
+
+export default function ProjectImpactMetrics({ project }) {
+  const { metrics } = project.details.impact;
+
+  return (
+    <section className="py-16 px-4 bg-gray-50">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8 text-center">Impact & Results</h2>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {metrics.map((metric, idx) => (
+            <div
+              key={idx}
+              className={`${project.categoryColor} text-white rounded-lg p-6 text-center animate-fade-in-up`}
+            >
+              <div className="text-4xl mb-2">{metric.icon}</div>
+              <div className="text-4xl font-bold mb-2">
+                <AnimatedCounter value={metric.value} />
+                {metric.label.includes('%') ? '%' : metric.label === 'Processing Time' || metric.label === 'Reporting Lag' ? ' days' : metric.label === 'Compliance' || metric.label === 'Email Volume' || metric.label === 'Cost Savings' || metric.label === 'Deployment Frequency' || metric.label === 'Integration Bugs' || metric.label === 'Defect Escape Rate' || metric.label === 'Decision Velocity' || metric.label === 'Response Time' ? '' : ''}
+              </div>
+              <div className="text-sm font-semibold">{metric.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
