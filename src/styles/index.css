@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors;
+  }
+  .section-padding {
+    @apply py-16 px-4 md:px-8 md:py-20;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
