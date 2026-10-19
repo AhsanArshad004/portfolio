@@ -9,7 +9,7 @@
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/AhsanArshad004/portfolio.git
 cd portfolio
 npm install
 ```

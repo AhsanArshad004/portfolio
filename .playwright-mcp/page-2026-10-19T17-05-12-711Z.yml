@@ -1,0 +1,500 @@
+- generic [ref=f3e3]:
+  - banner [ref=f3e4]:
+    - navigation [ref=f3e5]:
+      - link "Ahsan Arshad" [ref=f3e6] [cursor=pointer]:
+        - /url: /portfolio/
+      - generic [ref=f3e7]:
+        - link "About" [ref=f3e8] [cursor=pointer]:
+          - /url: "#about"
+        - link "Skills" [ref=f3e9] [cursor=pointer]:
+          - /url: "#skills"
+        - link "Projects" [ref=f3e10] [cursor=pointer]:
+          - /url: "#projects"
+        - link "Experience" [ref=f3e11] [cursor=pointer]:
+          - /url: "#experience"
+        - link "Contact" [ref=f3e12] [cursor=pointer]:
+          - /url: "#contact"
+        - link "GitHub" [ref=f3e13] [cursor=pointer]:
+          - /url: https://github.com/yourusername
+  - generic [ref=f3e15]:
+    - generic [ref=f3e16]: Full Stack Engineer | Enterprise Solutions
+    - heading "Ahsan Arshad" [level=1] [ref=f3e17]
+    - paragraph [ref=f3e18]: I build scalable, secure web and desktop applications that solve real business problems. With 10+ years of experience, I've delivered enterprise solutions to clients worldwide.
+    - generic [ref=f3e19]:
+      - link "Get in touch →" [ref=f3e20] [cursor=pointer]:
+        - /url: "#contact"
+      - link "View My Work" [ref=f3e21] [cursor=pointer]:
+        - /url: "#projects"
+  - generic [ref=f3e23]:
+    - generic [ref=f3e24]:
+      - generic [ref=f3e25]: FEATURED WORK
+      - heading "Enterprise solutions that deliver measurable outcomes" [level=2] [ref=f3e26]
+    - generic [ref=f3e27]:
+      - 'link "Trapeze FX - Global Transit Optimization Platform Enterprise Resource Planning Trapeze FX - Global Transit Optimization Platform Powered scheduling for MILLIONS of users across 40+ countries (Germany, Denmark, Netherlands, Saudi Arabia, etc.) Outcome: 40% Global Reach React Node.js PostgreSQL +1 more View Project →" [ref=f3e28] [cursor=pointer]':
+        - /url: /portfolio/project/trapeze-resource-planner
+        - generic [ref=f3e29]:
+          - generic [ref=f3e30]:
+            - img "Trapeze FX - Global Transit Optimization Platform" [ref=f3e31]
+            - generic [ref=f3e32]: Enterprise Resource Planning
+          - generic [ref=f3e33]:
+            - heading "Trapeze FX - Global Transit Optimization Platform" [level=3] [ref=f3e34]
+            - paragraph [ref=f3e35]: Powered scheduling for MILLIONS of users across 40+ countries (Germany, Denmark, Netherlands, Saudi Arabia, etc.)
+            - generic [ref=f3e36]: "Outcome: 40% Global Reach"
+            - generic [ref=f3e37]:
+              - generic [ref=f3e38]: React
+              - generic [ref=f3e39]: Node.js
+              - generic [ref=f3e40]: PostgreSQL
+              - generic [ref=f3e41]: +1 more
+            - generic [ref=f3e42]: View Project →
+      - 'link "Dokmee ECM Suite - Enterprise Document Platform ECM Platform Dokmee ECM Suite - Enterprise Document Platform Unified content management suite (OCR, PDF editing, merge, etc.) serving banks and 1000+ enterprises with SOC2 compliance Outcome: 3% Processing Time C# ASP.NET SQL Server +2 more View Project →" [ref=f3e43] [cursor=pointer]':
+        - /url: /portfolio/project/dokmee-ecm
+        - generic [ref=f3e44]:
+          - generic [ref=f3e45]:
+            - img "Dokmee ECM Suite - Enterprise Document Platform" [ref=f3e46]
+            - generic [ref=f3e47]: ECM Platform
+          - generic [ref=f3e48]:
+            - heading "Dokmee ECM Suite - Enterprise Document Platform" [level=3] [ref=f3e49]
+            - paragraph [ref=f3e50]: Unified content management suite (OCR, PDF editing, merge, etc.) serving banks and 1000+ enterprises with SOC2 compliance
+            - generic [ref=f3e51]: "Outcome: 3% Processing Time"
+            - generic [ref=f3e52]:
+              - generic [ref=f3e53]: C#
+              - generic [ref=f3e54]: ASP.NET
+              - generic [ref=f3e55]: SQL Server
+              - generic [ref=f3e56]: +2 more
+            - generic [ref=f3e57]: View Project →
+      - 'link "ValidCheck Data Validation Framework Quality Assurance ValidCheck Data Validation Framework Prevented 500+ critical issues before production, eliminated 75% of defects at entry point Outcome: 75% Defect Escape Rate C# .NET Core Microservices +1 more View Project →" [ref=f3e58] [cursor=pointer]':
+        - /url: /portfolio/project/validcheck
+        - generic [ref=f3e59]:
+          - generic [ref=f3e60]:
+            - img "ValidCheck Data Validation Framework" [ref=f3e61]
+            - generic [ref=f3e62]: Quality Assurance
+          - generic [ref=f3e63]:
+            - heading "ValidCheck Data Validation Framework" [level=3] [ref=f3e64]
+            - paragraph [ref=f3e65]: Prevented 500+ critical issues before production, eliminated 75% of defects at entry point
+            - generic [ref=f3e66]: "Outcome: 75% Defect Escape Rate"
+            - generic [ref=f3e67]:
+              - generic [ref=f3e68]: C#
+              - generic [ref=f3e69]: .NET Core
+              - generic [ref=f3e70]: Microservices
+              - generic [ref=f3e71]: +1 more
+            - generic [ref=f3e72]: View Project →
+      - 'link "ScoreCEO Analytics Dashboard Analytics ScoreCEO Analytics Dashboard Eliminated reporting lag, increased decision velocity by 3x, identified $1M+ in cost savings Outcome: 0% Reporting Lag React Node.js MongoDB +2 more View Project →" [ref=f3e73] [cursor=pointer]':
+        - /url: /portfolio/project/scoreceO
+        - generic [ref=f3e74]:
+          - generic [ref=f3e75]:
+            - img "ScoreCEO Analytics Dashboard" [ref=f3e76]
+            - generic [ref=f3e77]: Analytics
+          - generic [ref=f3e78]:
+            - heading "ScoreCEO Analytics Dashboard" [level=3] [ref=f3e79]
+            - paragraph [ref=f3e80]: Eliminated reporting lag, increased decision velocity by 3x, identified $1M+ in cost savings
+            - generic [ref=f3e81]: "Outcome: 0% Reporting Lag"
+            - generic [ref=f3e82]:
+              - generic [ref=f3e83]: React
+              - generic [ref=f3e84]: Node.js
+              - generic [ref=f3e85]: MongoDB
+              - generic [ref=f3e86]: +2 more
+            - generic [ref=f3e87]: View Project →
+      - 'link "Dokmee Forms - Enterprise Form Platform Forms Management Dokmee Forms - Enterprise Form Platform Standalone form platform delivering intelligent form automation before integration into ECM Suite Outcome: 90% Time to Build Form C# ASP.NET SQL Server +2 more View Project →" [ref=f3e88] [cursor=pointer]':
+        - /url: /portfolio/project/dokmee-forms
+        - generic [ref=f3e89]:
+          - generic [ref=f3e90]:
+            - img "Dokmee Forms - Enterprise Form Platform" [ref=f3e91]
+            - generic [ref=f3e92]: Forms Management
+          - generic [ref=f3e93]:
+            - heading "Dokmee Forms - Enterprise Form Platform" [level=3] [ref=f3e94]
+            - paragraph [ref=f3e95]: Standalone form platform delivering intelligent form automation before integration into ECM Suite
+            - generic [ref=f3e96]: "Outcome: 90% Time to Build Form"
+            - generic [ref=f3e97]:
+              - generic [ref=f3e98]: C#
+              - generic [ref=f3e99]: ASP.NET
+              - generic [ref=f3e100]: SQL Server
+              - generic [ref=f3e101]: +2 more
+            - generic [ref=f3e102]: View Project →
+      - 'link "AI Auto-Assistance Chat Bot - PropertyScout AI/Chatbot AI Auto-Assistance Chat Bot - PropertyScout Eliminated support wait times - transformed hours-long support delays into instant AI-powered answers Outcome: 100% Wait Time Reduction Angular .NET LLM Integration +2 more View Project →" [ref=f3e103] [cursor=pointer]':
+        - /url: /portfolio/project/ai-chat-support
+        - generic [ref=f3e104]:
+          - generic [ref=f3e105]:
+            - img "AI Auto-Assistance Chat Bot - PropertyScout" [ref=f3e106]
+            - generic [ref=f3e107]: AI/Chatbot
+          - generic [ref=f3e108]:
+            - heading "AI Auto-Assistance Chat Bot - PropertyScout" [level=3] [ref=f3e109]
+            - paragraph [ref=f3e110]: Eliminated support wait times - transformed hours-long support delays into instant AI-powered answers
+            - generic [ref=f3e111]: "Outcome: 100% Wait Time Reduction"
+            - generic [ref=f3e112]:
+              - generic [ref=f3e113]: Angular
+              - generic [ref=f3e114]: .NET
+              - generic [ref=f3e115]: LLM Integration
+              - generic [ref=f3e116]: +2 more
+            - generic [ref=f3e117]: View Project →
+  - generic [ref=f3e119]:
+    - heading "About Me" [level=2] [ref=f3e120]
+    - generic [ref=f3e121]:
+      - generic [ref=f3e122]:
+        - paragraph [ref=f3e123]: Hi, I'm Ahsan Arshad. I'm a full-stack developer with 10+ years of experience building enterprise web applications. I specialize in .NET, Angular, and React, with a track record of delivering scalable, secure solutions to clients worldwide.
+        - paragraph [ref=f3e124]: After graduating from the University of Gujrat in 2019, I started at Nextbridge, where I worked across multiple domains and interacted with clients from the USA, Dubai, and Canada. I've since joined Contour Software Inc., a subsidiary of Constellation Software, where I continue to build high-impact products.
+        - paragraph [ref=f3e125]: I'm passionate about writing clean, maintainable code and collaborating with cross-functional teams. I stay current with the latest technologies and industry trends to continuously improve my skills and deliver high-quality products.
+      - generic [ref=f3e126]:
+        - heading "Quick Facts" [level=3] [ref=f3e127]
+        - generic [ref=f3e128]:
+          - generic [ref=f3e129]:
+            - generic [ref=f3e130]: 0+
+            - generic [ref=f3e131]: Years Experience
+          - generic [ref=f3e132]:
+            - generic [ref=f3e133]: "0"
+            - generic [ref=f3e134]: Projects Completed
+          - generic [ref=f3e135]:
+            - generic [ref=f3e136]: 500+
+            - generic [ref=f3e137]: Users Impacted
+  - generic [ref=f3e139]:
+    - generic [ref=f3e140]:
+      - generic [ref=f3e141]: CAPABILITIES
+      - heading "A full stack toolkit, sharpened on production" [level=2] [ref=f3e142]
+    - generic [ref=f3e143]:
+      - generic [ref=f3e144]:
+        - heading "Backend (.NET Specialist)" [level=3] [ref=f3e145]
+        - generic [ref=f3e146]:
+          - 'generic "Proficiency: Expert" [ref=f3e147]':
+            - text: 🔶 .NET 8
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e148]':
+            - text: 🔶 .NET Core
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e149]':
+            - text: 🔷 C#
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e150]':
+            - text: 🔶 ASP.NET MVC
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e151]':
+            - text: 🔶 ASP.NET Web API
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e152]':
+            - text: 💪 Entity Framework
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e153]':
+            - text: ⭐ LINQ
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e154]':
+            - text: ⭐ Dependency Injection
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e155]':
+            - text: ⭐ ASP.NET Web Forms
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e156]':
+            - text: ⭐ NHibernate
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e157]':
+            - text: ⭐ Web Services
+            - generic: Expert Level
+      - generic [ref=f3e158]:
+        - heading "Frontend (Angular + .NET)" [level=3] [ref=f3e159]
+        - generic [ref=f3e160]:
+          - 'generic "Proficiency: Expert" [ref=f3e161]':
+            - text: 🅰️ Angular 16
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e162]':
+            - text: 📘 TypeScript
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e163]':
+            - text: 📙 JavaScript (ES6+)
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e164]':
+            - text: ⭐ HTML5
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e165]':
+            - text: ⭐ CSS3
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e166]':
+            - text: ⭐ AJAX
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e167]':
+            - text: ⭐ Tailwind CSS
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e168]':
+            - text: ⭐ Bootstrap
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e169]':
+            - text: ⭐ Material Design
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e170]':
+            - text: ⭐ Responsive Design
+            - generic: Expert Level
+      - generic [ref=f3e171]:
+        - heading "Databases (SQL & Oracle)" [level=3] [ref=f3e172]
+        - generic [ref=f3e173]:
+          - 'generic "Proficiency: Expert" [ref=f3e174]':
+            - text: 💾 SQL Server
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e175]':
+            - text: 🦁 Oracle Database
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e176]':
+            - text: 🔗 LINQ to SQL
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e177]':
+            - text: ⭐ Stored Procedures
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e178]':
+            - text: ⭐ Database Design
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e179]':
+            - text: ⭐ Query Optimization
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e180]':
+            - text: ⭐ Data Modeling
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e181]':
+            - text: ⭐ Performance Tuning
+            - generic: Expert Level
+      - generic [ref=f3e182]:
+        - heading "Architecture & Design" [level=3] [ref=f3e183]
+        - generic [ref=f3e184]:
+          - 'generic "Proficiency: Expert" [ref=f3e185]':
+            - text: 🏛️ SOLID Principles
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e186]':
+            - text: 🎨 Design Patterns
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e187]':
+            - text: ⭐ Clean Code
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e188]':
+            - text: 🧭 Domain-Driven Design
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e189]':
+            - text: ⭐ Multi-tenant Architecture
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e190]':
+            - text: ⭐ Constraint Solving
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e191]':
+            - text: ⭐ Service-Oriented Architecture
+            - generic: Expert Level
+      - generic [ref=f3e192]:
+        - heading "Cloud & DevOps" [level=3] [ref=f3e193]
+        - generic [ref=f3e194]:
+          - 'generic "Proficiency: Expert" [ref=f3e195]':
+            - text: ☁️ Azure
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e196]':
+            - text: ⭐ Azure DevOps
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e197]':
+            - text: 🐳 Docker
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e198]':
+            - text: 🐙 GitHub
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e199]':
+            - text: 🔀 Git
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e200]':
+            - text: ⚡ CI/CD Pipelines
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e201]':
+            - text: ⭐ GitHub Actions
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e202]':
+            - text: ⭐ Deployment Automation
+            - generic: Expert Level
+      - generic [ref=f3e203]:
+        - heading "Desktop Applications" [level=3] [ref=f3e204]
+        - generic [ref=f3e205]:
+          - 'generic "Proficiency: Expert" [ref=f3e206]':
+            - text: 🪟 WPF
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e207]':
+            - text: 📋 WebForms
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e208]':
+            - text: ⭐ Windows Services
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e209]':
+            - text: ⭐ System Integration
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e210]':
+            - text: ⭐ File Management Systems
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e211]':
+            - text: ⭐ Console Applications
+            - generic: Expert Level
+      - generic [ref=f3e212]:
+        - heading "Testing & Quality" [level=3] [ref=f3e213]
+        - generic [ref=f3e214]:
+          - 'generic "Proficiency: Expert" [ref=f3e215]':
+            - text: ⭐ Unit Testing
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e216]':
+            - text: ⭐ Integration Testing
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e217]':
+            - text: ✅ xUnit
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e218]':
+            - text: ⭐ NUnit
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e219]':
+            - text: ⭐ Mocha
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e220]':
+            - text: ⭐ Jasmine
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e221]':
+            - text: ⭐ Test-Driven Development
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e222]':
+            - text: ⭐ Playwright
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e223]':
+            - text: ⭐ Performance Testing
+            - generic: Expert Level
+      - generic [ref=f3e224]:
+        - heading "AI & LLM" [level=3] [ref=f3e225]
+        - generic [ref=f3e226]:
+          - 'generic "Proficiency: Expert" [ref=f3e227]':
+            - text: 🤖 LLM Integration
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e228]':
+            - text: ⭐ RAG (Retrieval-Augmented Generation)
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e229]':
+            - text: 🧠 OpenAI API
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e230]':
+            - text: ⭐ AI Chatbot Development
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e231]':
+            - text: ⭐ Prompt Engineering
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e232]':
+            - text: ⭐ Vector Embeddings
+            - generic: Expert Level
+      - generic [ref=f3e233]:
+        - heading "Tools & Platforms" [level=3] [ref=f3e234]
+        - generic [ref=f3e235]:
+          - 'generic "Proficiency: Expert" [ref=f3e236]':
+            - text: ⚙️ Visual Studio
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e237]':
+            - text: 💻 VS Code
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e238]':
+            - text: 🔀 Git
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e239]':
+            - text: 🐙 GitHub
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e240]':
+            - text: 📮 Postman
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e241]':
+            - text: 🐳 Docker
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e242]':
+            - text: ⭐ Vite
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e243]':
+            - text: ⭐ Webpack
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e244]':
+            - text: ⭐ SQL Server Management Studio
+            - generic: Expert Level
+      - generic [ref=f3e245]:
+        - heading "Enterprise Solutions" [level=3] [ref=f3e246]
+        - generic [ref=f3e247]:
+          - 'generic "Proficiency: Expert" [ref=f3e248]':
+            - text: 📑 ECM Systems
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e249]':
+            - text: ⭐ Document Management
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e250]':
+            - text: ⭐ Workflow Orchestration
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e251]':
+            - text: ✍️ Compliance & Audit Logging
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e252]':
+            - text: ⭐ Multi-region Deployments
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e253]':
+            - text: ⭐ Real-time Analytics
+            - generic: Expert Level
+          - 'generic "Proficiency: Expert" [ref=f3e254]':
+            - text: ⭐ Global Compliance (SOX, HIPAA, GDPR)
+            - generic: Expert Level
+  - generic [ref=f3e256]:
+    - heading "Experience" [level=2] [ref=f3e257]
+    - generic [ref=f3e258]:
+      - generic [ref=f3e259]:
+        - generic [ref=f3e260]:
+          - generic [ref=f3e261]:
+            - heading "Senior Software Developer" [level=3] [ref=f3e262]
+            - paragraph [ref=f3e263]: Contour Software Inc.
+          - generic [ref=f3e264]: 04/2022 - Present
+        - paragraph [ref=f3e265]: Led full-stack development of Trapeze FX (resource planner & timetable system). Delivered enterprise solutions for 500+ transit agencies managing 10K+ resources with 85% reduction in scheduling conflicts.
+      - generic [ref=f3e267]:
+        - generic [ref=f3e268]:
+          - generic [ref=f3e269]:
+            - heading "Software Engineer" [level=3] [ref=f3e270]
+            - paragraph [ref=f3e271]: Nextbridge (PVT) Ltd
+          - generic [ref=f3e272]: 02/2021 - 03/2022
+        - paragraph [ref=f3e273]: Architected & built 3 SaaS platforms (Dokmee ECM, Forms, ValidCheck) serving 1000+ organizations. Reduced document processing time from 30 days to 3 days; achieved 99% compliance audit score.
+      - generic [ref=f3e275]:
+        - generic [ref=f3e276]:
+          - generic [ref=f3e277]:
+            - heading "Associate Software Engineer" [level=3] [ref=f3e278]
+            - paragraph [ref=f3e279]: Nextbridge (PVT) Ltd
+          - generic [ref=f3e280]: 12/2019 - 02/2021
+        - paragraph [ref=f3e281]: Developed ScoreCEO credit platform (multi-portal architecture). Built real-time dashboards increasing client decision velocity by 3x and identifying $1M+ in cost savings.
+      - generic [ref=f3e283]:
+        - generic [ref=f3e284]:
+          - generic [ref=f3e285]:
+            - heading "Junior Software Engineer" [level=3] [ref=f3e286]
+            - paragraph [ref=f3e287]: Nextbridge (PVT) Ltd
+          - generic [ref=f3e288]: 09/2019 - 12/2019
+        - paragraph [ref=f3e289]: Started career building enterprise web applications. Learned ASP.NET, database design, and client collaboration—foundation for 6+ years of delivering production systems.
+  - generic [ref=f3e292]:
+    - heading "Testimonials" [level=2] [ref=f3e293]
+    - generic [ref=f3e294]:
+      - generic [ref=f3e295]:
+        - paragraph [ref=f3e296]: "\"Add client feedback here once projects are complete.\""
+        - generic [ref=f3e297]:
+          - paragraph [ref=f3e298]: Coming Soon
+          - paragraph [ref=f3e299]: Client Testimonial
+      - generic [ref=f3e300]:
+        - paragraph [ref=f3e301]: "\"Testimonials will showcase the impact and quality of your work.\""
+        - generic [ref=f3e302]:
+          - paragraph [ref=f3e303]: Your Client
+          - paragraph [ref=f3e304]: Project Manager
+      - generic [ref=f3e305]:
+        - paragraph [ref=f3e306]: "\"These help build trust and credibility with potential clients.\""
+        - generic [ref=f3e307]:
+          - paragraph [ref=f3e308]: Another Client
+          - paragraph [ref=f3e309]: CTO
+  - generic [ref=f3e311]:
+    - heading "Let's Work Together" [level=2] [ref=f3e312]
+    - paragraph [ref=f3e313]: Have a project in mind? Let's discuss how I can help.
+    - generic [ref=f3e314]:
+      - generic [ref=f3e315]:
+        - heading "Email" [level=3] [ref=f3e316]
+        - link "ahsanarshad326@gmail.com" [ref=f3e317] [cursor=pointer]:
+          - /url: mailto:ahsanarshad326@gmail.com
+      - generic [ref=f3e318]:
+        - heading "Phone" [level=3] [ref=f3e319]
+        - link "+92 306 1862 764" [ref=f3e320] [cursor=pointer]:
+          - /url: tel:+923061862764
+      - generic [ref=f3e321]:
+        - heading "LinkedIn" [level=3] [ref=f3e322]
+        - link "Connect on LinkedIn" [ref=f3e323] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/ahsan-arshad-b96b47112/
+  - contentinfo [ref=f3e324]:
+    - generic [ref=f3e326]:
+      - generic [ref=f3e327]: © 2026 Ahsan Arshad. All rights reserved.
+      - generic [ref=f3e328]:
+        - link "GitHub" [ref=f3e329] [cursor=pointer]:
+          - /url: https://github.com/yourusername
+        - link "LinkedIn" [ref=f3e330] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/ahsan-arshad-b96b47112/
+        - link "Email" [ref=f3e331] [cursor=pointer]:
+          - /url: mailto:ahsanarshad326@gmail.com

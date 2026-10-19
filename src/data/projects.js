@@ -57,10 +57,10 @@ export const projects = [
     startDate: '2020-06-01',
     endDate: '2022-12-01',
     images: {
-      thumbnail: 'https://images.unsplash.com/photo-1507842217343-583f20270320?w=400&q=80&auto=format',
-      hero: 'https://images.unsplash.com/photo-1507842217343-583f20270320?w=1200&q=80&auto=format',
+      thumbnail: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&q=80&auto=format',
+      hero: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80&auto=format',
       gallery: [
-        { url: 'https://images.unsplash.com/photo-1450101499163-c8917c7b7c1d?w=600&q=80&auto=format', caption: 'Document Management' },
+        { url: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80&auto=format', caption: 'Document Management' },
         { url: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80&auto=format', caption: 'Form Automation' },
         { url: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80&auto=format', caption: 'Workflow Orchestration' },
       ],
@@ -104,11 +104,11 @@ export const projects = [
     startDate: '2021-03-01',
     endDate: '2022-09-01',
     images: {
-      thumbnail: 'https://images.unsplash.com/photo-1516321318423-f06f70504ad0?w=400&q=80&auto=format',
-      hero: 'https://images.unsplash.com/photo-1516321318423-f06f70504ad0?w=1200&q=80&auto=format',
+      thumbnail: 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=400&q=80&auto=format',
+      hero: 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=1200&q=80&auto=format',
       gallery: [
         { url: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80&auto=format', caption: 'Validation Rules' },
-        { url: 'https://images.unsplash.com/photo-1516321318423-f06f70504ad0?w=600&q=80&auto=format', caption: 'Error Detection' },
+        { url: 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=600&q=80&auto=format', caption: 'Error Detection' },
         { url: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80&auto=format', caption: 'Test Coverage' },
       ],
     },
@@ -198,10 +198,10 @@ export const projects = [
     startDate: '2019-01-01',
     endDate: '2021-06-01',
     images: {
-      thumbnail: 'https://images.unsplash.com/photo-1507842217343-583f20270320?w=400&q=80&auto=format',
-      hero: 'https://images.unsplash.com/photo-1507842217343-583f20270320?w=1200&q=80&auto=format',
+      thumbnail: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&q=80&auto=format',
+      hero: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80&auto=format',
       gallery: [
-        { url: 'https://images.unsplash.com/photo-1450101499163-c8917c7b7c1d?w=600&q=80&auto=format', caption: 'Form Design Studio' },
+        { url: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80&auto=format', caption: 'Form Design Studio' },
         { url: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80&auto=format', caption: 'Workflow Automation' },
         { url: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80&auto=format', caption: 'Form Analytics' },
       ],
@@ -245,8 +245,8 @@ export const projects = [
     startDate: '2023-06-01',
     endDate: '2024-09-01',
     images: {
-      thumbnail: 'https://images.unsplash.com/photo-1516321318423-f06f70504ad0?w=400&q=80&auto=format',
-      hero: 'https://images.unsplash.com/photo-1516321318423-f06f70504ad0?w=1200&q=80&auto=format',
+      thumbnail: 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=400&q=80&auto=format',
+      hero: 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=1200&q=80&auto=format',
       gallery: [
         { url: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80&auto=format', caption: 'Chat Interface' },
         { url: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80&auto=format', caption: 'Admin Analytics Dashboard' },

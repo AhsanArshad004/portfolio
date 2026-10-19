@@ -9,7 +9,7 @@ export default function Footer() {
             © {currentYear} Ahsan Arshad. All rights reserved.
           </div>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition">
+            <a href="https://github.com/AhsanArshad004" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition">
               GitHub
             </a>
             <a href="https://www.linkedin.com/in/ahsan-arshad-b96b47112/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition">

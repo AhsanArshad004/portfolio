@@ -28,7 +28,7 @@ export default function Header() {
           <a href="#projects" className="text-gray-300 hover:text-cyan-400 transition">Projects</a>
           <a href="#experience" className="text-gray-300 hover:text-cyan-400 transition">Experience</a>
           <a href="#contact" className="text-gray-300 hover:text-cyan-400 transition">Contact</a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400">
+          <a href="https://github.com/AhsanArshad004" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400">
             GitHub
           </a>
         </div>
@@ -42,7 +42,7 @@ export default function Header() {
               <a href="#projects" className="text-gray-300 hover:text-cyan-400">Projects</a>
               <a href="#experience" className="text-gray-300 hover:text-cyan-400">Experience</a>
               <a href="#contact" className="text-gray-300 hover:text-cyan-400">Contact</a>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400">
+              <a href="https://github.com/AhsanArshad004" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400">
                 GitHub
               </a>
             </div>

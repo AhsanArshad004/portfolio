@@ -2,7 +2,7 @@
 
 Professional portfolio showcasing 6+ enterprise projects built with .NET, Angular, and React.
 
-**Live:** https://ahsanarshad.dev (or https://yourusername.github.io)
+**Live:** https://ahsanarshad004.github.io/portfolio/
 
 ## Technologies
 
@@ -13,12 +13,12 @@ Professional portfolio showcasing 6+ enterprise projects built with .NET, Angula
 
 ## Projects Featured
 
-1. **Trapeze FX - Resource Planner** — Real-time trip visualization with Gantt charts
-2. **Trapeze FX - Timetable Planner** — Transit timetable creation system
-3. **Dokmee ECM** — Enterprise content management platform
-4. **Dokmee Forms** — Mobile-first form builder
-5. **ValidCheck** — Electronic check processing platform
-6. **ScoreCEO** — Credit repair business software
+1. **Trapeze FX - Global Transit Optimization Platform** — Enterprise scheduling system for 40+ countries
+2. **Dokmee ECM Suite** — Enterprise document management platform
+3. **ValidCheck** — Data validation framework for microservices
+4. **ScoreCEO Analytics** — Real-time analytics dashboard
+5. **Dokmee Forms** — Enterprise form automation platform
+6. **AI Chat Support** — RAG-powered chatbot for PropertyScout
 
 ## Development
 
