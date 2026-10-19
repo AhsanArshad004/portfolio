@@ -84,28 +84,32 @@ async function test() {
       failed++;
     }
 
-    // Test 6: Direct URL to project (regression test for the GitHub Pages
-    // 404 -> redirect bug: a deep link must land on the project, not on
-    // GitHub's "Site not found" page).
-    console.log('\n=== TEST 6: Direct URL access ===');
-    const response = await page.goto(`${baseUrl}/project/trapeze-resource-planner`);
-    const projectHeading = await page.locator('h1').first().textContent({ timeout: 5000 }).catch(() => '');
-    const landedOnProject = response.ok() && projectHeading.includes('Trapeze');
-    if (landedOnProject) {
-      console.log(`✓ Direct project URL loaded: ${projectHeading}`);
-      passed++;
-    } else {
-      console.log(`✗ Direct project URL did not load the project (status ${response.status()}, heading "${projectHeading}")`);
-      failed++;
-    }
-
-    // Test 7: Console errors
-    console.log('\n=== TEST 7: Console messages ===');
+    // Test 6 (before the deep-link navigation below): console errors during
+    // normal interactive use (load, clicks, back navigation) should be zero.
+    console.log('\n=== TEST 6: Console messages (normal navigation) ===');
     if (consoleErrors.length === 0) {
-      console.log('✓ No console errors');
+      console.log('✓ No console errors during normal navigation');
       passed++;
     } else {
       console.log(`✗ Console errors found: ${consoleErrors.join(', ')}`);
+      failed++;
+    }
+
+    // Test 7: Direct URL to project (regression test for the GitHub Pages
+    // 404 -> redirect bug: a deep link must land on the project, not on
+    // GitHub's "Site not found" page). GitHub Pages has no server-side
+    // rewrites, so the public/404.html trick means the *first* HTTP response
+    // for any deep link is always a 404 by design, even when the redirect
+    // then loads the right page in the browser -- so this checks the
+    // rendered heading, not response.ok().
+    console.log('\n=== TEST 7: Direct URL access ===');
+    await page.goto(`${baseUrl}/project/trapeze-resource-planner`);
+    const projectHeading = await page.locator('h1').first().textContent({ timeout: 5000 }).catch(() => '');
+    if (projectHeading.includes('Trapeze')) {
+      console.log(`✓ Direct project URL loaded: ${projectHeading}`);
+      passed++;
+    } else {
+      console.log(`✗ Direct project URL did not load the project (heading "${projectHeading}")`);
       failed++;
     }
 
