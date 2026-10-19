@@ -17,7 +17,13 @@ export default function ProjectDetail() {
 
   useEffect(() => {
     window.scrollTo(0, 0)
-  }, [id])
+    if (project) {
+      document.title = `${project.title} | Ahsan Arshad`
+    }
+    return () => {
+      document.title = 'Ahsan Arshad - Full Stack Developer'
+    }
+  }, [id, project])
 
   if (!project) {
     return (

@@ -67,9 +67,9 @@ export default function About() {
               </div>
               <div>
                 <div className="text-4xl font-bold text-cyan-400 mb-1">
-                  500+
+                  <Counter value="4" />
                 </div>
-                <div className="text-sm text-gray-400">Users Impacted</div>
+                <div className="text-sm text-gray-400">Industries Served</div>
               </div>
             </div>
           </div>

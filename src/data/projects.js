@@ -92,7 +92,7 @@ export const projects = [
     categoryColor: 'bg-gradient-blue-purple',
     demoLink: null,
     startDate: '2021-03-01',
-    endDate: '2022-09-01',
+    endDate: '2022-02-01',
     images: {
       // No public demo exists for this internal tool; illustrative stock photo only.
       thumbnail: 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=400&q=80&auto=format',

@@ -1,39 +1,3 @@
-import { useState, useEffect, useRef } from 'react';
-
-function AnimatedCounter({ value, duration = 2000 }) {
-  const [displayValue, setDisplayValue] = useState(0);
-  const ref = useRef(null);
-  const hasAnimated = useRef(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting && !hasAnimated.current) {
-        hasAnimated.current = true;
-        const numericValue = parseInt(value);
-        const startTime = Date.now();
-
-        const animate = () => {
-          const elapsed = Date.now() - startTime;
-          const progress = Math.min(elapsed / duration, 1);
-          setDisplayValue(Math.floor(progress * numericValue));
-
-          if (progress < 1) {
-            requestAnimationFrame(animate);
-          }
-        };
-
-        animate();
-        observer.unobserve(entry.target);
-      }
-    }, { threshold: 0.3 });
-
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, [value, duration]);
-
-  return <span ref={ref}>{displayValue}</span>;
-}
-
 export default function ProjectImpactMetrics({ project }) {
   const { metrics } = project.details.impact;
 

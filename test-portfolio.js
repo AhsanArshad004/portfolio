@@ -2,26 +2,36 @@ import { chromium } from 'playwright';
 
 async function test() {
   const browser = await chromium.launch();
-  const context = await browser.createContext();
+  const context = await browser.newContext();
   const page = await context.newPage();
-  
-  const baseUrl = 'https://ahsanarshad004.github.io/portfolio';
+
+  // Strip any trailing slash so `${baseUrl}/project/...` below never ends up
+  // with a double slash, which breaks React Router's basename matching.
+  const baseUrl = (process.env.TEST_BASE_URL || 'https://ahsanarshad004.github.io/portfolio').replace(/\/+$/, '');
   let passed = 0;
   let failed = 0;
+
+  // Register the console listener before any navigation so it catches
+  // errors from every test below, not just whatever happens after test 7.
+  const consoleErrors = [];
+  page.on('console', msg => {
+    if (msg.type() === 'error') consoleErrors.push(msg.text());
+  });
 
   try {
     // Test 1: Homepage loads
     console.log('\n=== TEST 1: Homepage loads ===');
-    await page.goto(baseUrl);
+    await page.goto(`${baseUrl}/`);
     const title = await page.title();
     console.log(`✓ Page title: ${title}`);
     passed++;
 
-    // Test 2: Check for main sections
+    // Test 2: Check for main sections (by section id, not visible text --
+    // the hero section doesn't literally render the word "Hero" anywhere).
     console.log('\n=== TEST 2: Homepage sections ===');
-    const sections = ['Hero', 'Projects', 'About', 'Skills', 'Experience', 'Contact'];
-    for (const section of sections) {
-      const exists = await page.locator(`text="${section}"`).first().isVisible().catch(() => false);
+    const sectionIds = { Hero: 'h1', Projects: '#projects', About: '#about', Skills: '#skills', Experience: '#experience', Contact: '#contact' };
+    for (const [section, selector] of Object.entries(sectionIds)) {
+      const exists = await page.locator(selector).first().isVisible().catch(() => false);
       if (exists) {
         console.log(`✓ ${section} section visible`);
         passed++;
@@ -74,27 +84,28 @@ async function test() {
       failed++;
     }
 
-    // Test 6: Direct URL to project
+    // Test 6: Direct URL to project (regression test for the GitHub Pages
+    // 404 -> redirect bug: a deep link must land on the project, not on
+    // GitHub's "Site not found" page).
     console.log('\n=== TEST 6: Direct URL access ===');
-    await page.goto(`${baseUrl}/project/trapeze-resource-planner`);
-    const projectTitle = await page.title();
-    console.log(`✓ Direct project URL loaded: ${projectTitle}`);
-    passed++;
+    const response = await page.goto(`${baseUrl}/project/trapeze-resource-planner`);
+    const projectHeading = await page.locator('h1').first().textContent({ timeout: 5000 }).catch(() => '');
+    const landedOnProject = response.ok() && projectHeading.includes('Trapeze');
+    if (landedOnProject) {
+      console.log(`✓ Direct project URL loaded: ${projectHeading}`);
+      passed++;
+    } else {
+      console.log(`✗ Direct project URL did not load the project (status ${response.status()}, heading "${projectHeading}")`);
+      failed++;
+    }
 
     // Test 7: Console errors
     console.log('\n=== TEST 7: Console messages ===');
-    const messages = [];
-    page.on('console', msg => {
-      if (msg.type() === 'error') {
-        messages.push(msg.text());
-      }
-    });
-    await page.waitForTimeout(500);
-    if (messages.length === 0) {
+    if (consoleErrors.length === 0) {
       console.log('✓ No console errors');
       passed++;
     } else {
-      console.log(`✗ Console errors found: ${messages.join(', ')}`);
+      console.log(`✗ Console errors found: ${consoleErrors.join(', ')}`);
       failed++;
     }
 
