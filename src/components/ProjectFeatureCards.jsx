@@ -12,11 +12,11 @@ export default function ProjectFeatureCards({ project }) {
         {keyFeatures.map((feature, idx) => (
           <div
             key={idx}
-            className="bg-dark-card rounded-lg border border-gray-600 p-6 hover:border-cyan-500 hover:scale-105 transition-all duration-200 group"
+            className="bg-dark-card rounded-lg border border-gray-600 p-6 hover:border-cyan-500 transition-all duration-200"
           >
             <div className="text-4xl mb-3">{feature.icon}</div>
             <h3 className="text-lg font-bold text-white mb-2">{feature.title}</h3>
-            <p className="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+            <p className="text-gray-300 text-sm">
               {feature.description}
             </p>
           </div>

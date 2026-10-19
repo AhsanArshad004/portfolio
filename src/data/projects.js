@@ -29,9 +29,9 @@ export const projects = [
       },
       impact: {
         metrics: [
-          { label: 'Global Reach', value: '40', icon: '🌍' },
-          { label: 'Conflict Reduction', value: '85', icon: '✓' },
-          { label: 'Users Served', value: '1M+', icon: '👥' },
+          { label: 'Global Reach', value: '40', display: '40+', icon: '🌍' },
+          { label: 'Conflict Reduction', value: '85', display: '85%', icon: '✓' },
+          { label: 'Users Served', value: '1M+', display: '1M+', icon: '👥' },
         ],
       },
       keyFeatures: [
@@ -76,9 +76,9 @@ export const projects = [
       },
       impact: {
         metrics: [
-          { label: 'Processing Time', value: '3', icon: '⚡' },
-          { label: 'Manual Work Cut', value: '60', icon: '✓' },
-          { label: 'Compliance Score', value: '99', icon: '🔒' },
+          { label: 'Processing Time', value: '3', display: '3 days', icon: '⚡' },
+          { label: 'Manual Work Cut', value: '60', display: '60%', icon: '✓' },
+          { label: 'Compliance Score', value: '99', display: '99%', icon: '🔒' },
         ],
       },
       keyFeatures: [
@@ -123,9 +123,9 @@ export const projects = [
       },
       impact: {
         metrics: [
-          { label: 'Defect Escape Rate', value: '75', icon: '✓' },
-          { label: 'Critical Issues Prevented', value: '500', icon: '💰' },
-          { label: 'Code Duplication Eliminated', value: '80', icon: '🗑' },
+          { label: 'Defect Escape Rate', value: '75', display: '75% reduced', icon: '✓' },
+          { label: 'Critical Issues Prevented', value: '500', display: '500+', icon: '💰' },
+          { label: 'Code Duplication Eliminated', value: '80', display: '80%', icon: '🗑' },
         ],
       },
       keyFeatures: [
@@ -170,9 +170,9 @@ export const projects = [
       },
       impact: {
         metrics: [
-          { label: 'Reporting Lag', value: '0', icon: '⚡' },
-          { label: 'Decision Velocity', value: '3', icon: '🚀' },
-          { label: 'Cost Savings Identified', value: '1', icon: '💰' },
+          { label: 'Reporting Lag', value: '0', display: 'Real-time', icon: '⚡' },
+          { label: 'Decision Velocity', value: '3', display: '3x faster', icon: '🚀' },
+          { label: 'Cost Savings Identified', value: '1', display: '$1M+', icon: '💰' },
         ],
       },
       keyFeatures: [
@@ -217,9 +217,9 @@ export const projects = [
       },
       impact: {
         metrics: [
-          { label: 'Time to Build Form', value: '90', icon: '⚡' },
-          { label: 'Manual Entry Reduction', value: '95', icon: '✓' },
-          { label: 'Data Quality Improvement', value: '99', icon: '📊' },
+          { label: 'Time to Build Form', value: '90', display: '90% faster', icon: '⚡' },
+          { label: 'Manual Entry Reduction', value: '95', display: '95%', icon: '✓' },
+          { label: 'Data Quality Improvement', value: '99', display: '99%', icon: '📊' },
         ],
       },
       keyFeatures: [
@@ -264,9 +264,9 @@ export const projects = [
       },
       impact: {
         metrics: [
-          { label: 'Wait Time Reduction', value: '100', icon: '⚡' },
-          { label: 'Support Satisfaction', value: '95', icon: '😊' },
-          { label: 'Support Cost Savings', value: '40', icon: '💰' },
+          { label: 'Wait Time Reduction', value: '100', display: 'Instant', icon: '⚡' },
+          { label: 'Support Satisfaction', value: '95', display: '95%', icon: '😊' },
+          { label: 'Support Cost Savings', value: '40', display: '40%', icon: '💰' },
         ],
       },
       keyFeatures: [

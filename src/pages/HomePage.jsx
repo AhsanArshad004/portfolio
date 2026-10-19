@@ -11,12 +11,14 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <Hero />
-      <Projects />
-      <About />
-      <Skills />
-      <Experience />
-      <Contact />
+      <main>
+        <Hero />
+        <Projects />
+        <About />
+        <Skills />
+        <Experience />
+        <Contact />
+      </main>
       <Footer />
     </div>
   )

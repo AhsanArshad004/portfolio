@@ -20,7 +20,6 @@ export default function ProjectDetailHero({ project }) {
           {project.category}
         </div>
         <h1 className="text-4xl font-bold mb-2">{project.title}</h1>
-        <p className="text-lg max-w-2xl text-gray-100">{project.details.problem.description}</p>
       </div>
     </div>
   )

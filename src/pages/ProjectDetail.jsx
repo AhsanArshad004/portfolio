@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { projects } from '../data/projects'
 import Header from '../components/Header'
@@ -12,6 +13,10 @@ export default function ProjectDetail() {
   const { id } = useParams()
   const project = projects.find(p => p.id === id)
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [id])
+
   if (!project) {
     return (
       <div className="min-h-screen flex flex-col bg-dark-bg">
@@ -19,9 +24,9 @@ export default function ProjectDetail() {
         <div className="flex-1 flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-white mb-4">Project Not Found</h1>
-            <Link to="/" className="text-cyan-400 hover:text-cyan-300">
+            <a href="/#projects" className="text-cyan-400 hover:text-cyan-300">
               ← Back to Projects
-            </Link>
+            </a>
           </div>
         </div>
         <Footer />
@@ -35,9 +40,9 @@ export default function ProjectDetail() {
 
       {/* Sticky Back Link */}
       <div className="sticky top-20 bg-dark-bg/95 backdrop-blur border-b border-gray-700 z-40 px-4 py-3">
-        <Link to="/" className="text-cyan-400 hover:text-cyan-300 font-semibold">
+        <a href="/#projects" className="text-cyan-400 hover:text-cyan-300 font-semibold">
           ← Back to Projects
-        </Link>
+        </a>
       </div>
 
       <main className="flex-1">

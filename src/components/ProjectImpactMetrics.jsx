@@ -50,8 +50,7 @@ export default function ProjectImpactMetrics({ project }) {
             >
               <div className="text-4xl mb-2">{metric.icon}</div>
               <div className="text-4xl font-bold mb-2 text-cyan-400">
-                <AnimatedCounter value={metric.value} />
-                {metric.label.includes('%') ? '%' : metric.label === 'Processing Time' || metric.label === 'Reporting Lag' ? ' days' : metric.label === 'Compliance' || metric.label === 'Email Volume' || metric.label === 'Cost Savings' || metric.label === 'Deployment Frequency' || metric.label === 'Integration Bugs' || metric.label === 'Defect Escape Rate' || metric.label === 'Decision Velocity' || metric.label === 'Response Time' ? '' : ''}
+                {metric.display || metric.value}
               </div>
               <div className="text-sm font-semibold text-gray-300">{metric.label}</div>
             </div>
