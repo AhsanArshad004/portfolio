@@ -223,7 +223,7 @@ export const projects = [
         impact: 'Repetitive support questions with no after-hours coverage',
       },
       solution: {
-        description: 'Built an AI support assistant using an LLM with RAG (Retrieval-Augmented Generation) grounded in PropertyScout\'s help docs and FAQ content, so it answers product questions (credits, which report type to use, owner vs. parcel search, data sources) instantly instead of waiting on a support ticket. Added a like/dislike feedback loop and an admin dashboard for reviewing chat transcripts and satisfaction trends.',
+        description: 'Built an AI support assistant using an LLM with RAG (Retrieval-Augmented Generation) grounded in PropertyScout.io\'s help docs and FAQ content, so it answers product questions (credits, which report type to use, owner vs. parcel search, data sources) instantly instead of waiting on a support ticket. Added a like/dislike feedback loop and an admin dashboard for reviewing chat transcripts and satisfaction trends.',
         approach: 'LLM + RAG grounded in product documentation, with a feedback loop',
       },
       impact: {

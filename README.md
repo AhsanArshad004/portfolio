@@ -18,7 +18,7 @@ Professional portfolio showcasing 6+ enterprise projects built with .NET, Angula
 3. **ValidCheck** — Data validation framework for microservices
 4. **ScoreCEO Analytics** — Real-time analytics dashboard
 5. **Dokmee Forms** — Enterprise form automation platform
-6. **AI Chat Support** — RAG-powered chatbot for PropertyScout
+6. **AI Chat Support** — RAG-powered chatbot for PropertyScout.io
 
 ## Development
 
