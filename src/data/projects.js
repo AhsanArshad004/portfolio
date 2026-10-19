@@ -2,12 +2,13 @@ import trapezeImg from '../assets/projects/trapeze-scheduling.jpg'
 import dokmeeImg from '../assets/projects/dokmee-capture.jpg'
 import scoreCeoImg from '../assets/projects/scoreceo-platform.jpg'
 import propertyScoutImg from '../assets/projects/propertyscout-platform.jpg'
+import validCheckImg from '../assets/projects/validcheck-platform.jpg'
 
 export const projects = [
   {
     id: 'trapeze-resource-planner',
-    title: 'Trapeze FX - Transit Resource & Crew Scheduling',
-    description: 'Contributed to Trapeze FX, Trapeze Group\'s fixed-route scheduling and crew/vehicle planning suite used by transit agencies.',
+    title: 'Trapeze FX (now Nexfeld) - Transit Resource & Crew Scheduling',
+    description: 'Contributed to Trapeze FX, Trapeze Group\'s fixed-route scheduling and crew/vehicle planning suite. The European business rebranded to Nexfeld in February 2026; the underlying product is the same.',
     technologies: ['C#', '.NET', 'SQL Server', 'WPF', 'Oracle'],
     category: 'Transit Scheduling Software',
     categoryColor: 'bg-gradient-blue-purple',
@@ -25,7 +26,7 @@ export const projects = [
         impact: 'Manual, error-prone scheduling across regions with different compliance rules',
       },
       solution: {
-        description: 'Worked on Trapeze FX, the resource/crew scheduling module within Trapeze Group\'s transit suite: a Gantt-style scheduling interface backed by SQL Server/Oracle that lets planners build routes, assign crews and vehicles, and check assignments against regulatory and union constraints before publishing a schedule.',
+        description: 'Worked on Trapeze FX, the resource/crew scheduling module within Trapeze Group\'s transit suite: a Gantt-style scheduling interface backed by SQL Server/Oracle that lets planners build routes, assign crews and vehicles, and check assignments against regulatory and union constraints before publishing a schedule. In February 2026, Trapeze Group rebranded this European planning & scheduling business as Nexfeld; it\'s the same product and team under a new name.',
         approach: 'Enterprise scheduling UI + constrained rostering against SQL Server/Oracle data',
       },
       impact: {
@@ -47,7 +48,7 @@ export const projects = [
   {
     id: 'dokmee-ecm',
     title: 'Dokmee ECM - Enterprise Document Management',
-    description: 'Contributed to Dokmee, an enterprise content management platform with OCR capture, automated workflows, and e-signature.',
+    description: 'After delivering Dokmee Forms, moved onto the full Dokmee product team, contributing across the ECM suite: OCR capture, workflows, and e-signature.',
     technologies: ['C#', 'ASP.NET', 'SQL Server', 'WebForms', 'WPF'],
     category: 'ECM Platform',
     categoryColor: 'bg-gradient-blue-teal',
@@ -65,7 +66,7 @@ export const projects = [
         impact: 'Manual document routing and no centralized audit trail',
       },
       solution: {
-        description: 'Worked on modules of the Dokmee ECM suite: OCR-based capture that indexes scanned documents automatically, a workflow engine for routing documents through approval chains, and e-signature integration. Documents are stored with full version history and an audit log for compliance reporting.',
+        description: 'After independently delivering Dokmee Forms, I moved onto the broader Dokmee team, where I work across the ECM suite: OCR-based capture that indexes scanned documents automatically, a workflow engine for routing documents through approval chains, and e-signature integration. Documents are stored with full version history and an audit log for compliance reporting.',
         approach: 'OCR capture + workflow engine on a C#/SQL Server stack',
       },
       impact: {
@@ -85,41 +86,40 @@ export const projects = [
   },
   {
     id: 'validcheck',
-    title: 'ValidCheck - Internal Validation Framework',
-    description: 'An internal .NET library built to centralize data validation logic shared across several backend services.',
-    technologies: ['C#', '.NET Core', 'Microservices', 'Domain-Driven Design'],
-    category: 'Quality Assurance',
+    title: 'ValidCheck - Business eCheck Payment Platform',
+    description: 'Contributed to ValidCheck, a platform that lets businesses send and receive checks online with built-in fraud prevention.',
+    technologies: ['C#', '.NET Core', 'SQL Server', 'Payment Processing'],
+    category: 'FinTech / Payments',
     categoryColor: 'bg-gradient-blue-purple',
-    demoLink: null,
+    demoLink: 'https://validcheckdev.com/',
     startDate: '2021-03-01',
     endDate: '2022-02-01',
     images: {
-      // No public demo exists for this internal tool; illustrative stock photo only.
-      thumbnail: 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=400&q=80&auto=format',
-      hero: 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=1200&q=80&auto=format',
+      thumbnail: validCheckImg,
+      hero: validCheckImg,
       gallery: [],
     },
     details: {
       problem: {
-        description: 'Each backend microservice had its own validation logic (type checks, business rules, cross-field checks), duplicated and inconsistent across services. Bugs caught by validation in one service often weren\'t caught in another, and there was no single place to look up the rules.',
-        impact: 'Duplicated, inconsistent validation logic across services',
+        description: 'Businesses that pay by paper check deal with mailing delays, manual data entry into accounting software, and check fraud. There was no way to send a check electronically to someone who isn\'t enrolled in a banking app, while still keeping the payment auditable and fraud-checked.',
+        impact: 'Slow, manual check payments with no built-in fraud protection',
       },
       solution: {
-        description: 'Built a shared .NET validation library with a fluent API for declarative rules (type checking, business logic, cross-field validation), distributed as an internal package so every service could reference the same rule definitions instead of reimplementing them.',
-        approach: 'Shared fluent-API validation library distributed across services',
+        description: 'Worked on ValidCheck, which lets a business send an eCheck to any payee by email (no app or enrollment required on their end), syncs contacts and payment records with QuickBooks to avoid double data entry, and posts check details to the bank through a Positive Pay integration so the check is validated and funds are available instantly instead of after days of clearing.',
+        approach: 'eCheck issuance with QuickBooks sync and Positive Pay fraud validation',
       },
       impact: {
         metrics: [
-          { label: 'Scope', value: 'Shared', display: 'Shared across services', icon: '📦' },
-          { label: 'Type', value: 'Internal', display: 'Internal library', icon: '🔧' },
-          { label: 'Stack', value: '.NET', display: '.NET Core', icon: '✓' },
+          { label: 'Integration', value: 'QuickBooks', display: 'QuickBooks sync', icon: '🔗' },
+          { label: 'Fraud Check', value: 'Positive Pay', display: 'Positive Pay validation', icon: '🔒' },
+          { label: 'Enrollment', value: 'None', display: 'No payee signup required', icon: '✉️' },
         ],
       },
       keyFeatures: [
-        { title: 'Fluent Rules API', description: 'Composable domain rules with clear business language', icon: '📝' },
-        { title: 'Async Validation', description: 'Database checks and external API validation in rules', icon: '🔄' },
-        { title: 'Shared Package', description: 'Single source of truth distributed as an internal package across services', icon: '📦' },
-        { title: 'Error Localization', description: 'Multi-language error messages with business context', icon: '🌍' },
+        { title: 'Email-Based eChecks', description: 'Payees receive and deposit a check with just a name and email, no app required', icon: '✉️' },
+        { title: 'QuickBooks Sync', description: 'Contacts and payment records stay in sync automatically', icon: '🔗' },
+        { title: 'Positive Pay Validation', description: 'Check details are posted to the bank for instant fraud validation', icon: '🔒' },
+        { title: 'Single-Entry Data', description: 'Check data is entered once and shared across banking and accounting systems', icon: '📝' },
       ],
     },
   },
@@ -165,7 +165,7 @@ export const projects = [
   {
     id: 'dokmee-forms',
     title: 'Dokmee Forms - Form Automation Module',
-    description: 'Built the form-automation module of the Dokmee suite, later integrated into the main ECM platform.',
+    description: 'Implemented and delivered Dokmee Forms independently; that delivery led to joining the broader Dokmee product team afterward.',
     technologies: ['C#', 'ASP.NET', 'SQL Server', 'Angular', '.NET Framework'],
     category: 'Forms Management',
     categoryColor: 'bg-gradient-blue-purple',
@@ -183,14 +183,14 @@ export const projects = [
         impact: 'Manual form intake with no routing or validation',
       },
       solution: {
-        description: 'Built a drag-drop form builder with conditional logic and field validation, plus automated routing so submitted forms move through an approval chain instead of being forwarded by hand. This module was later folded into the broader Dokmee ECM suite.',
+        description: 'Built a drag-drop form builder with conditional logic and field validation, plus automated routing so submitted forms move through an approval chain instead of being forwarded by hand. Implementing and delivering this module independently led to being moved onto the broader Dokmee product team afterward, working across their full product line.',
         approach: 'Drag-drop form builder with automated approval routing',
       },
       impact: {
         metrics: [
           { label: 'Type', value: 'Module', display: 'ECM module', icon: '🧩' },
           { label: 'Stack', value: '.NET', display: '.NET + Angular', icon: '⚙️' },
-          { label: 'Outcome', value: 'Merged', display: 'Merged into Dokmee ECM', icon: '🔗' },
+          { label: 'Outcome', value: 'Promoted', display: 'Led to joining full Dokmee team', icon: '🔗' },
         ],
       },
       keyFeatures: [
