@@ -7,8 +7,8 @@ import validCheckImg from '../assets/projects/validcheck-platform.jpg'
 export const projects = [
   {
     id: 'trapeze-resource-planner',
-    title: 'Trapeze FX (now Nexfeld) - Transit Resource & Crew Scheduling',
-    description: 'Contributed to Trapeze FX, Trapeze Group\'s fixed-route scheduling and crew/vehicle planning suite. The European business rebranded to Nexfeld in February 2026; the underlying product is the same.',
+    title: 'Trapeze FX (now Nexfeld) - Transit Planning & Scheduling Suite',
+    description: 'Worked across five modules of Trapeze FX\'s planning & scheduling suite: Timetable Planner, Resource Planner, Optimizer, Routing, and Report Generation.',
     technologies: ['C#', '.NET', 'SQL Server', 'WPF', 'Oracle'],
     category: 'Transit Scheduling Software',
     categoryColor: 'bg-gradient-blue-purple',
@@ -22,33 +22,34 @@ export const projects = [
     },
     details: {
       problem: {
-        description: 'Transit agencies plan fixed bus/rail routes, driver rosters, and vehicle assignments by hand or with disconnected tools, which makes it slow to react when a route changes, a driver calls in, or a regulatory rule (union agreements, work-time limits, vehicle compliance) is violated by the schedule.',
+        description: 'Transit agencies plan fixed bus/rail routes, driver rosters, and vehicle assignments by hand or with disconnected tools, which makes it slow to react when a route changes, a driver calls in, or a regulatory rule (union agreements, work-time limits, vehicle compliance) is violated by the schedule. Each of these problems (timetabling, resourcing, optimization, routing, reporting) needs its own specialized tool.',
         impact: 'Manual, error-prone scheduling across regions with different compliance rules',
       },
       solution: {
-        description: 'Worked on Trapeze FX, the resource/crew scheduling module within Trapeze Group\'s transit suite: a Gantt-style scheduling interface backed by SQL Server/Oracle that lets planners build routes, assign crews and vehicles, and check assignments against regulatory and union constraints before publishing a schedule. In February 2026, Trapeze Group rebranded this European planning & scheduling business as Nexfeld; it\'s the same product and team under a new name.',
-        approach: 'Enterprise scheduling UI + constrained rostering against SQL Server/Oracle data',
+        description: 'Worked across several modules of Trapeze FX\'s planning & scheduling suite: Timetable Planner for building and editing service timetables, Resource Planner for allocating crews and vehicles, Optimizer for packaging driver runs and assignments efficiently, Routing for GIS-based route and stop definition, and Report Generation for Power BI-based service and performance reporting. In February 2026, Trapeze Group rebranded this European planning & scheduling business as Nexfeld; it\'s the same product and team under a new name.',
+        approach: 'Enterprise scheduling suite spanning timetabling, resourcing, optimization, routing, and reporting',
       },
       impact: {
         metrics: [
-          { label: 'Platform', value: 'Enterprise', display: 'Enterprise-grade', icon: '🚌' },
+          { label: 'Modules', value: '5', display: '5+ modules', icon: '🧩' },
           { label: 'Deployment', value: 'Global', display: 'Global deployments', icon: '🌍' },
           { label: 'Role', value: 'Contributor', display: 'Team contributor', icon: '👥' },
         ],
       },
       keyFeatures: [
-        { title: 'Gantt Scheduling UI', description: 'Visual route and crew scheduling with drag-and-drop trip assignment', icon: '📅' },
-        { title: 'Compliance Checks', description: 'Flags schedule conflicts against work-time and union rules before publishing', icon: '⚙️' },
-        { title: 'Vehicle Assignment', description: 'Assigns vehicles to routes based on availability and maintenance status', icon: '🚐' },
-        { title: 'Multi-Agency Support', description: 'Configurable per-agency rules for regions with different regulations', icon: '🗺️' },
+        { title: 'Timetable Planner', description: 'Build and edit service timetables, blocks, duties, and rosters', icon: '📅' },
+        { title: 'Resource Planner', description: 'Allocate crews and vehicles to scheduled trips and runs', icon: '👥' },
+        { title: 'Optimizer', description: 'Packages driver runs and operator assignments for efficiency', icon: '⚙️' },
+        { title: 'Routing', description: 'GIS-based mapping to define service areas, routes, and stops', icon: '🗺️' },
+        { title: 'Report Generation', description: 'Power BI-based reporting and analytics on service performance', icon: '📊' },
       ],
       comparison: null,
     },
   },
   {
     id: 'dokmee-ecm',
-    title: 'Dokmee ECM - Enterprise Document Management',
-    description: 'After delivering Dokmee Forms, moved onto the full Dokmee product team, contributing across the ECM suite: OCR capture, workflows, and e-signature.',
+    title: 'Dokmee - Enterprise Document Management Suite',
+    description: 'After delivering Dokmee Forms, moved onto the full Dokmee product team, working across Dokmee ECM, Capture, Cloud ECM, and Mobile ECM.',
     technologies: ['C#', 'ASP.NET', 'SQL Server', 'WebForms', 'WPF'],
     category: 'ECM Platform',
     categoryColor: 'bg-gradient-blue-teal',
@@ -66,8 +67,8 @@ export const projects = [
         impact: 'Manual document routing and no centralized audit trail',
       },
       solution: {
-        description: 'After independently delivering Dokmee Forms, I moved onto the broader Dokmee team, where I work across the ECM suite: OCR-based capture that indexes scanned documents automatically, a workflow engine for routing documents through approval chains, and e-signature integration. Documents are stored with full version history and an audit log for compliance reporting.',
-        approach: 'OCR capture + workflow engine on a C#/SQL Server stack',
+        description: 'After independently delivering Dokmee Forms, I moved onto the broader Dokmee team, working across multiple products in their suite: Dokmee ECM (the core document hub with workflow routing and audit logging), Dokmee Capture (AI-assisted scanning and indexing), Cloud ECM (browser-based access with no local install), and Mobile ECM (document access and approvals from a phone).',
+        approach: 'Contributed across Dokmee\'s ECM, Capture, Cloud ECM, and Mobile ECM products',
       },
       impact: {
         metrics: [
@@ -77,10 +78,10 @@ export const projects = [
         ],
       },
       keyFeatures: [
-        { title: 'OCR Capture', description: 'Automated indexing and classification of scanned documents', icon: '🔍' },
-        { title: 'Workflow Engine', description: 'Drag-and-drop approval routing with role-based permissions', icon: '🚀' },
-        { title: 'e-Signature', description: 'Digital signature collection integrated into document workflows', icon: '✍️' },
-        { title: 'Audit Logging', description: 'Full version history and access logs for compliance reporting', icon: '🔐' },
+        { title: 'Dokmee ECM', description: 'Core document hub: centralized storage, workflow routing, and audit logging', icon: '🗄️' },
+        { title: 'Dokmee Capture', description: 'AI-assisted scanning and indexing with no per-click charges', icon: '🔍' },
+        { title: 'Cloud ECM', description: 'Full ECM in the browser, hosted with no local install required', icon: '☁️' },
+        { title: 'Mobile ECM', description: 'Document access and workflow approvals from a phone', icon: '📱' },
       ],
     },
   },
@@ -144,8 +145,8 @@ export const projects = [
         impact: 'Manual lead tracking, dispute processing, and compliance paperwork',
       },
       solution: {
-        description: 'Built features for ScoreCEO\'s multi-portal architecture (separate client, affiliate, and admin portals): dispute letter generation and tracking, and client-facing dashboards for credit repair businesses to manage customers end to end.',
-        approach: 'Multi-portal CRM with automated dispute and compliance workflows',
+        description: 'Built features across ScoreCEO\'s multi-portal architecture (separate client, affiliate, and admin portals): the Dispute Management System that automates credit dispute processing from report import through bureau communication, Compliance Tools that enforce state-specific and PCI/DSS requirements automatically, and the Lead/Client Portal for onboarding and case-status visibility.',
+        approach: 'Multi-portal CRM with automated dispute processing and compliance tooling',
       },
       impact: {
         metrics: [
@@ -155,10 +156,10 @@ export const projects = [
         ],
       },
       keyFeatures: [
-        { title: 'Lead & Client CRM', description: 'Tracks leads through onboarding to active credit repair clients', icon: '📋' },
-        { title: 'Dispute Automation', description: 'Generates and tracks credit-bureau dispute letters per client', icon: '📨' },
-        { title: 'Compliance Workflows', description: 'State-specific contracts and disclosures sent automatically', icon: '🔒' },
-        { title: 'Multi-Portal Access', description: 'Separate portals for clients, affiliates, and business admins', icon: '🔀' },
+        { title: 'Dispute Management System', description: 'Automates dispute processing from report import through bureau communication', icon: '📨' },
+        { title: 'Lead/Client Portal', description: 'Branded portal for client onboarding, document storage, and case-status visibility', icon: '📋' },
+        { title: 'Compliance Tools', description: 'Enforces state-specific, PCI/DSS, TSR, and FTC compliance automatically', icon: '🔒' },
+        { title: 'Invoicing & Billing Engine', description: 'Automates invoice generation, recurring payments, and PCI-compliant payment tracking', icon: '💳' },
       ],
     },
   },
@@ -218,11 +219,11 @@ export const projects = [
     },
     details: {
       problem: {
-        description: 'PropertyScout.io gives real estate professionals, insurers, and title companies access to property/owner records, title reports, and deed data. New users had questions about credits, report types, and how to read specific records, and the support team fielded the same questions repeatedly with no after-hours coverage.',
+        description: 'PropertyScout.io gives real estate professionals, insurers, and title companies access to owner search, parcel number (APN) search, preliminary title reports, and market value estimates. New users had questions about credits, which report type to use, and how to read specific records, and the support team fielded the same questions repeatedly with no after-hours coverage.',
         impact: 'Repetitive support questions with no after-hours coverage',
       },
       solution: {
-        description: 'Built an AI support assistant using an LLM with RAG (Retrieval-Augmented Generation) grounded in PropertyScout\'s help docs and FAQ content, so it answers product questions (credits, report types, data sources) instantly instead of waiting on a support ticket. Added a like/dislike feedback loop and an admin dashboard for reviewing chat transcripts and satisfaction trends.',
+        description: 'Built an AI support assistant using an LLM with RAG (Retrieval-Augmented Generation) grounded in PropertyScout\'s help docs and FAQ content, so it answers product questions (credits, which report type to use, owner vs. parcel search, data sources) instantly instead of waiting on a support ticket. Added a like/dislike feedback loop and an admin dashboard for reviewing chat transcripts and satisfaction trends.',
         approach: 'LLM + RAG grounded in product documentation, with a feedback loop',
       },
       impact: {

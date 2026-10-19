@@ -8,13 +8,13 @@ export default function Experience() {
       title: 'Senior Software Developer',
       company: 'Contour Software Inc.',
       period: '04/2022 - Present',
-      description: 'Contributing to Trapeze FX (rebranded Nexfeld in 2026), a transit fixed-route and crew scheduling suite, and the Dokmee ECM document management platform.',
+      description: 'Contributing to Trapeze FX (rebranded Nexfeld in 2026) across its Timetable Planner, Resource Planner, Optimizer, Routing, and Report Generation modules.',
     },
     {
       title: 'Software Engineer',
       company: 'Nextbridge (PVT) Ltd',
       period: '02/2021 - 03/2022',
-      description: 'Contributed to ValidCheck, a business eCheck payment platform, and continued working across the Dokmee ECM product suite.',
+      description: 'Contributed to ValidCheck, a business eCheck payment platform, and continued working across Dokmee ECM, Capture, Cloud ECM, and Mobile ECM.',
     },
     {
       title: 'Associate Software Engineer',

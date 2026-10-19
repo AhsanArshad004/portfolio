@@ -44,7 +44,7 @@ export default function About() {
               Hi, I'm Ahsan Arshad, a full-stack developer specializing in .NET and Angular, with 6+ years building enterprise software: transit scheduling systems, document management platforms, and credit-repair business tools.
             </p>
             <p className="text-lg text-gray-300 mb-4">
-              After graduating from the University of Gujrat in 2019, I joined Nextbridge, where I worked on client projects for companies in the USA, Dubai, and Canada. I now work at Contour Software Inc., a Constellation Software subsidiary, contributing to Trapeze FX (rebranded Nexfeld in 2026) and the Dokmee ECM suite.
+              After graduating from the University of Gujrat in 2019, I joined Nextbridge, where I worked on client projects for companies in the USA, Dubai, and Canada, including Dokmee, ScoreCEO, and ValidCheck. I now work at Contour Software Inc., a Constellation Software subsidiary, contributing to Trapeze FX (rebranded Nexfeld in 2026).
             </p>
             <p className="text-lg text-gray-300">
               I care about writing code that the next person (often me, six months later) can actually maintain, and I enjoy working closely with the teams that depend on what I build.
