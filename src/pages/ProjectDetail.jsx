@@ -9,6 +9,8 @@ import ProjectImpactMetrics from '../components/ProjectImpactMetrics'
 import ProjectFeatureCards from '../components/ProjectFeatureCards'
 import ProjectGallery from '../components/ProjectGallery'
 
+const base = import.meta.env.BASE_URL
+
 export default function ProjectDetail() {
   const { id } = useParams()
   const project = projects.find(p => p.id === id)
@@ -24,7 +26,7 @@ export default function ProjectDetail() {
         <div className="flex-1 flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-white mb-4">Project Not Found</h1>
-            <a href="/#projects" className="text-cyan-400 hover:text-cyan-300">
+            <a href={`${base}#projects`} className="text-cyan-400 hover:text-cyan-300">
               ← Back to Projects
             </a>
           </div>
@@ -40,7 +42,7 @@ export default function ProjectDetail() {
 
       {/* Sticky Back Link */}
       <div className="sticky top-20 bg-dark-bg/95 backdrop-blur border-b border-gray-700 z-40 px-4 py-3">
-        <a href="/#projects" className="text-cyan-400 hover:text-cyan-300 font-semibold">
+        <a href={`${base}#projects`} className="text-cyan-400 hover:text-cyan-300 font-semibold">
           ← Back to Projects
         </a>
       </div>

@@ -20,6 +20,16 @@ export default function ProjectDetailHero({ project }) {
           {project.category}
         </div>
         <h1 className="text-4xl font-bold mb-2">{project.title}</h1>
+        {project.demoLink && (
+          <a
+            href={project.demoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-2 text-cyan-300 hover:text-cyan-200 font-semibold underline"
+          >
+            Visit live site →
+          </a>
+        )}
       </div>
     </div>
   )

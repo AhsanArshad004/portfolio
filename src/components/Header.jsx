@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+const base = import.meta.env.BASE_URL
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -25,11 +27,11 @@ export default function Header() {
 
         {/* Desktop menu */}
         <div className="hidden md:flex gap-8 items-center">
-          <a href="/#about" className="text-gray-300 hover:text-cyan-400 transition">About</a>
-          <a href="/#skills" className="text-gray-300 hover:text-cyan-400 transition">Skills</a>
-          <a href="/#projects" className="text-gray-300 hover:text-cyan-400 transition">Projects</a>
-          <a href="/#experience" className="text-gray-300 hover:text-cyan-400 transition">Experience</a>
-          <a href="/#contact" className="text-gray-300 hover:text-cyan-400 transition">Contact</a>
+          <a href={`${base}#about`} className="text-gray-300 hover:text-cyan-400 transition">About</a>
+          <a href={`${base}#skills`} className="text-gray-300 hover:text-cyan-400 transition">Skills</a>
+          <a href={`${base}#projects`} className="text-gray-300 hover:text-cyan-400 transition">Projects</a>
+          <a href={`${base}#experience`} className="text-gray-300 hover:text-cyan-400 transition">Experience</a>
+          <a href={`${base}#contact`} className="text-gray-300 hover:text-cyan-400 transition">Contact</a>
           <a href="https://github.com/AhsanArshad004" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400">
             GitHub
           </a>
@@ -39,11 +41,11 @@ export default function Header() {
         {menuOpen && (
           <div className="absolute top-16 left-0 right-0 bg-dark-card shadow-lg md:hidden border-b border-gray-700">
             <div className="flex flex-col gap-4 p-4">
-              <a href="/#about" className="text-gray-300 hover:text-cyan-400" onClick={() => setMenuOpen(false)}>About</a>
-              <a href="/#skills" className="text-gray-300 hover:text-cyan-400" onClick={() => setMenuOpen(false)}>Skills</a>
-              <a href="/#projects" className="text-gray-300 hover:text-cyan-400" onClick={() => setMenuOpen(false)}>Projects</a>
-              <a href="/#experience" className="text-gray-300 hover:text-cyan-400" onClick={() => setMenuOpen(false)}>Experience</a>
-              <a href="/#contact" className="text-gray-300 hover:text-cyan-400" onClick={() => setMenuOpen(false)}>Contact</a>
+              <a href={`${base}#about`} className="text-gray-300 hover:text-cyan-400" onClick={() => setMenuOpen(false)}>About</a>
+              <a href={`${base}#skills`} className="text-gray-300 hover:text-cyan-400" onClick={() => setMenuOpen(false)}>Skills</a>
+              <a href={`${base}#projects`} className="text-gray-300 hover:text-cyan-400" onClick={() => setMenuOpen(false)}>Projects</a>
+              <a href={`${base}#experience`} className="text-gray-300 hover:text-cyan-400" onClick={() => setMenuOpen(false)}>Experience</a>
+              <a href={`${base}#contact`} className="text-gray-300 hover:text-cyan-400" onClick={() => setMenuOpen(false)}>Contact</a>
               <a href="https://github.com/AhsanArshad004" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400" onClick={() => setMenuOpen(false)}>
                 GitHub
               </a>

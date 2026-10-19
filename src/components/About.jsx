@@ -41,13 +41,13 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg text-gray-300 mb-4">
-              Hi, I'm Ahsan Arshad. I'm a full-stack developer with 10+ years of experience building enterprise web applications. I specialize in .NET, Angular, and React, with a track record of delivering scalable, secure solutions to clients worldwide.
+              Hi, I'm Ahsan Arshad, a full-stack developer specializing in .NET and Angular, with 6+ years building enterprise software: transit scheduling systems, document management platforms, and credit-repair business tools.
             </p>
             <p className="text-lg text-gray-300 mb-4">
-              After graduating from the University of Gujrat in 2019, I started at Nextbridge, where I worked across multiple domains and interacted with clients from the USA, Dubai, and Canada. I've since joined Contour Software Inc., a subsidiary of Constellation Software, where I continue to build high-impact products.
+              After graduating from the University of Gujrat in 2019, I joined Nextbridge, where I worked on client projects for companies in the USA, Dubai, and Canada. I now work at Contour Software Inc., a Constellation Software subsidiary, contributing to Trapeze FX and the Dokmee ECM suite.
             </p>
             <p className="text-lg text-gray-300">
-              I'm passionate about writing clean, maintainable code and collaborating with cross-functional teams. I stay current with the latest technologies and industry trends to continuously improve my skills and deliver high-quality products.
+              I care about writing code that the next person (often me, six months later) can actually maintain, and I enjoy working closely with the teams that depend on what I build.
             </p>
           </div>
           <div className="bg-dark-card border border-gray-700 rounded-lg p-8">
@@ -55,7 +55,7 @@ export default function About() {
             <div className="space-y-6">
               <div>
                 <div className="text-4xl font-bold text-cyan-400 mb-1">
-                  <Counter value="10" />+
+                  <Counter value="6" />+
                 </div>
                 <div className="text-sm text-gray-400">Years Experience</div>
               </div>

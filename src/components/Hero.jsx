@@ -22,7 +22,7 @@ export default function Hero() {
           Ahsan Arshad
         </h1>
         <p className="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
-          I build scalable, secure web and desktop applications that solve real business problems. With 10+ years of experience, I've delivered enterprise solutions to clients worldwide.
+          I'm a .NET and Angular developer with 6+ years building enterprise software: transit scheduling systems, document management platforms, and AI-powered support tools used by real businesses.
         </p>
         <div className="flex gap-4 justify-center mb-8">
           <a
